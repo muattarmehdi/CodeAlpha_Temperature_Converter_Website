@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Temeprature Converter</title>
+</head>
+<body>
+   <div class="container">
+    <div class="t-converter">
+        
+        <h2 style="text-align: center;">Temperature Converter</h2>
+        
+        <div class="result">
+            <i class='bx bxs-thermometer'></i>
+            <span class="result-heading">Temperature</span>
+            <h2 class="celsius-value" id="celsius"></h2>
+        </div>
+
+        <div class="degree-type">
+            <div class="degree-field">
+                <label for="degree">Degrees</label>
+                <input type="number" name="degrees" id="degree">
+
+            </div>
+            
+            <div class="temp-field">
+                <label for="from-temp-type">From</label>
+                <select name="temperatures" id="from-temp-type">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+    
+            </div>
+
+            <div class="temp-field">
+                <label for="to-temp-type">To</label>
+                <select name="temperatures" id="to-temp-type">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+    
+            </div>
+        
+        </div>
+        <button id="convert">Convert</button>
+    </div>
+   </div>  
+
+<script src="js/script.js"></script>
+</body>
+</html>
